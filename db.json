@@ -2,6 +2,6 @@
   "region_infection": [
     {"place_name": "Khan Doun Penh, Phnom Penh", "latitude": 11.568191, "longitude": 104.922130, "infected_amount": 10, "recover_amount": 100, "dead_amount": 100},
     {"place_name": "kampong Cham", "latitude": 11.568191, "longitude": 104.922130, "infected_amount": 10, "recover_amount": 100, "dead_amount": 100}
-  ]
+  ],
   "latitude_longitude_cambodia": {"longitude": 105.09881637990475, "latitude": 12.447801036171477, "latitudeDelta": 9.085471673068268, "longitudeDelta": 5.542513355612755}
 }
