@@ -14,5 +14,5 @@
     {"place_name": "Koh Kong", "latitude": 11.517075, "longitude": 103.093127, "infected_amount": 10, "recover_amount": 0, "dead_amount": 0, "weight": 200},
     
   ],
-  "latitude_longitude_cambodia": {"longitude": 105.09881637990475, "latitude": 12.447801036171477, "latitudeDelta": 9.085471673068268, "longitudeDelta": 5.542513355612755}
+  "latitude_longitude_cambodia": {"latitude": 12.447801036171477, "longitude": 105.09881637990475, "latitudeDelta": 9.085471673068268, "longitudeDelta": 5.542513355612755}
 }
