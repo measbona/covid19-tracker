@@ -1,9 +1,6 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "region_infection": [
+    {"place_name": "Phnom Penh", "latitude": 11.568191, "longitude": 104.922130, "infected_amount": 10, "recover_amount": 100, "dead_amount": 100},
+    {"place_name": "kampong Cham", "latitude": 11.568191, "longitude": 104.922130, "infected_amount": 10, "recover_amount": 100, "dead_amount": 100}
+  ]
 }
