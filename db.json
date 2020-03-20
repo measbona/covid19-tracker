@@ -1,13 +1,13 @@
 {
   "region_infection": [
-    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_amount": 9, "recover_amount": 0, "dead_amount": 0, "weight": 100},
+    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_amount": 10, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Sieam Reap", "latitude": 13.364762, "longitude": 103.858123, "infected_amount": 3, "recover_amount": 0, "dead_amount": 0, "weight": 100},
-    {"place_name": "kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
+    {"place_name": "kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_amount": 3, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_amount": 1, "recover_amount": 1, "dead_amount": 0, "weight": 100},
     {"place_name": "Preah Vihear", "latitude": 13.800049, "longitude": 104.951991, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Banteay Meanchey", "latitude": 13.614323, "longitude": 102.962619, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Kampong Chhnang", "latitude": 12.260308, "longitude": 104.670932, "infected_amount": 3, "recover_amount": 0, "dead_amount": 0, "weight": 100},
-    {"place_name": "Battambang", "latitude": 13.099608, "longitude": 103.200061, "infected_amount": 4, "recover_amount": 0, "dead_amount": 0, "weight": 100},
+    {"place_name": "Battambang", "latitude": 13.099608, "longitude": 103.200061, "infected_amount": 6, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Kampot", "latitude": 10.593869, "longitude": 104.168642, "infected_amount": 1, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Tboung khmum", "latitude": 11.853216, "longitude": 105.762984, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Kep", "latitude": 10.542780, "longitude": 104.320005, "infected_amount": 5, "recover_amount": 0, "dead_amount": 0, "weight": 100},
