@@ -2,7 +2,7 @@
   "region_infection": [
     {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_amount": 11, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Sieam Reap", "latitude": 13.364762, "longitude": 103.858123, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
-    {"place_name": "kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_amount": 10, "recover_amount": 0, "dead_amount": 0, "weight": 100},
+    {"place_name": "kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_amount": 10, "recover_amount": 1, "dead_amount": 0, "weight": 100},
     {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_amount": 5, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Preah Vihear", "latitude": 13.800049, "longitude": 104.951991, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
     {"place_name": "Banteay Meanchey", "latitude": 13.614323, "longitude": 102.962619, "infected_amount": 2, "recover_amount": 0, "dead_amount": 0, "weight": 100},
