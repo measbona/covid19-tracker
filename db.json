@@ -1,9 +1,9 @@
 {
   "region_infection": [
-    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_count": 8, "recovered_count": 65, "dead_count": 0},
+    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_count": 6, "recovered_count": 67, "dead_count": 0},
     {"place_name": "Siem Reap", "latitude": 13.364762, "longitude": 103.858123, "infected_count": 1, "rec10vered_count": 11, "dead_count": 0},
     {"place_name": "Kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_count": 3, "recovered_count": 17, "dead_count": 0},
-    {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_count": 1, "recovered_count": 47, "dead_count": 0},
+    {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_count": 0, "recovered_count": 48, "dead_count": 0},
     {"place_name": "Preah Vihear", "latitude": 13.800049, "longitude": 104.951991, "infected_count": 1, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Banteay Meanchey", "latitude": 13.614323, "longitude": 102.962619, "infected_count": 3, "recovered_count": 5, "dead_count": 0},
     {"place_name": "Kampong Chhnang", "latitude": 12.260308, "longitude": 104.670932, "infected_count": 0, "recovered_count": 4, "dead_count": 0},
