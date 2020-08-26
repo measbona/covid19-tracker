@@ -14,7 +14,7 @@
     {"place_name": "Koh Kong", "latitude": 11.517075, "longitude": 103.093127, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Kandal", "latitude": 11.482031, "longitude": 104.947274, "infected_count": 0, "recovered_count": 8, "dead_count": 0},
     {"place_name": "Takeo", "latitude": 10.9677295, "longitude": 104.7169265, "infected_count": 3, "recovered_count": 4, "dead_count": 0},
-    {"place_name": "Kratié", "latitude": 12.6792473, "longitude": 105.6325549, "infected_count": 1, "recovered_count": 1, "dead_count": 0},
+    {"place_name": "Kratié", "latitude": 12.6792473, "longitude": 105.6325549, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Oddar Meanchey", "latitude": 14.160947, "longitude": 103.205117, "infected_count": 0, "recovered_count": 1, "dead_count": 0},
     {"place_name": "Svay Rieng", "latitude": 14.160947, "longitude": 103.205117, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Kampong Speu", "latitude": 11.5790366, "longitude": 104.0003384, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
