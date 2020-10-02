@@ -7,7 +7,7 @@
     {"place_name": "Preah Vihear", "latitude": 13.800049, "longitude": 104.951991, "infected_count": 0, "recovered_count": 3, "dead_count": 0},
     {"place_name": "Banteay Meanchey", "latitude": 13.614323, "longitude": 102.962619, "infected_count": 0, "recovered_count": 8, "dead_count": 0},
     {"place_name": "Kampong Chhnang", "latitude": 12.260308, "longitude": 104.670932, "infected_count": 0, "recovered_count": 6, "dead_count": 0},
-    {"place_name": "Battambang", "latitude": 13.099608, "longitude": 103.200061, "infected_count": 0, "recovered_count": 12, "dead_count": 0},
+    {"place_name": "Battambang", "latitude": 13.099608, "longitude": 103.200061, "infected_count": 1, "recovered_count": 12, "dead_count": 0},
     {"place_name": "Kampot", "latitude": 10.593869, "longitude": 104.168642, "infected_count": 0, "recovered_count": 3, "dead_count": 0},
     {"place_name": "Tbong Khmum", "latitude": 11.853216, "longitude": 105.762984, "infected_count": 0, "recovered_count": 27, "dead_count": 0},
     {"place_name": "Kep", "latitude": 10.542780, "longitude": 104.320005, "infected_count": 0, "recovered_count": 4, "dead_count": 0},
