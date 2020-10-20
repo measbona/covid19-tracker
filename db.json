@@ -21,7 +21,8 @@
     {"place_name": "Pursat", "latitude": 12.4537704, "longitude": 103.8577828, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Ratanakiri", "latitude": 13.9331533, "longitude": 106.5141996, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Prey Veng", "latitude": 11.3670395, "longitude": 105.1742187, "infected_count": 0, "recovered_count": 1, "dead_count": 0},
-    {"place_name": "Steung Treng", "latitude": 13.8517149, "longitude": 105.5903189, "infected_count": 0, "recovered_count": 1, "dead_count": 0}
+    {"place_name": "Steung Treng", "latitude": 13.8517149, "longitude": 105.5903189, "infected_count": 0, "recovered_count": 1, "dead_count": 0},
+    {"place_name": "Kompong Thom", "latitude": 12.7113723, "longitude": 104.8805389, "infected_count": 2, "recovered_count": 0, "dead_count": 0}
   ],
   "latitude_longitude_cambodia": {"latitude": 12.447801036171477, "longitude": 105.09881637990475, "latitudeDelta": 9.085471673068268, "longitudeDelta": 5.542513355612755}
 }
