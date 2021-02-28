@@ -1,8 +1,8 @@
 {
   "region_infection": [
-    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_count": 234, "recovered_count": 284, "dead_count": 0},
+    {"place_name": "Phnom Penh", "latitude": 11.556451, "longitude": 104.928221, "infected_count": 281, "recovered_count": 284, "dead_count": 0},
     {"place_name": "Banteay Meanchey", "latitude": 13.614323, "longitude": 102.962619, "infected_count": 1, "recovered_count": 57, "dead_count": 0},
-    {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_count": 15, "recovered_count": 40, "dead_count": 0},
+    {"place_name": "Preah Sihanouk", "latitude": 10.626867, "longitude": 103.511563, "infected_count": 28, "recovered_count": 40, "dead_count": 0},
     {"place_name": "Battambang", "latitude": 13.099608, "longitude": 103.200061, "infected_count": 0, "recovered_count": 26, "dead_count": 0},
     {"place_name": "Pailin", "latitude": 12.8532635, "longitude": 102.6114391, "infected_count": 1, "recovered_count": 17, "dead_count": 0},
     {"place_name": "Kampong Cham", "latitude": 11.992733, "longitude": 105.464800, "infected_count": 0, "recovered_count": 16, "dead_count": 0},
@@ -10,7 +10,7 @@
     {"place_name": "Thbong Khmom", "latitude": 11.853216, "longitude": 105.762984, "infected_count": 0, "recovered_count": 8, "dead_count": 0},
     {"place_name": "Kep", "latitude": 10.542780, "longitude": 104.320005, "infected_count": 0, "recovered_count": 4, "dead_count": 0},
     {"place_name": "Kampong Chhnang", "latitude": 12.260308, "longitude": 104.670932, "infected_count": 0, "recovered_count": 3, "dead_count": 0},
-    {"place_name": "Kampong Speu", "latitude": 11.5790366, "longitude": 104.0003384, "infected_count": 4, "recovered_count": 3, "dead_count": 0},
+    {"place_name": "Kampong Speu", "latitude": 11.5790366, "longitude": 104.0003384, "infected_count": 8, "recovered_count": 3, "dead_count": 0},
     {"place_name": "Preah Vihear", "latitude": 13.800049, "longitude": 104.951991, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Koh Kong", "latitude": 11.517075, "longitude": 103.093127, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
     {"place_name": "Kampot", "latitude": 10.593869, "longitude": 104.168642, "infected_count": 0, "recovered_count": 2, "dead_count": 0},
