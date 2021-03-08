@@ -1,0 +1,23 @@
+{
+  "name": "covid19-tracker",
+  "version": "1.0.0",
+  "description": "This project is represent a raw url of muuve live tracking covid-19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/measbona/covid19-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/measbona/covid19-tracker/issues"
+  },
+  "homepage": "https://github.com/measbona/covid19-tracker#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-fetch": "2.6.1"
+  }
+}
