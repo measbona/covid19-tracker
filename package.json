@@ -4,7 +4,8 @@
   "description": "This project is represent a raw url of muuve live tracking covid-19",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "covid-update": "node -e 'require(\"./covidUpdate.js\").covidUpdate()'"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
   },
   "homepage": "https://github.com/measbona/covid19-tracker#readme",
   "dependencies": {
-    "lodash": "^4.17.21",
+    "cli-table3": "0.6.0",
+    "lodash": "4.17.21",
     "node-fetch": "2.6.1"
   }
 }
