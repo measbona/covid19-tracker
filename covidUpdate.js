@@ -93,7 +93,7 @@ getRemoteData = async () => {
 updater = (remote, local) => {
   _.forEach(local, province => {
     const remoteData = _.find(remote, data => _.lowerCase(data.en_location) === _.lowerCase(province.place_name))
-    province.infected_count = remoteData.cases - remoteData.recovered
+    province.infected_count = remoteData.cases - remoteData.recovered - remoteData.deaths
     province.recovered_count = remoteData.recovered
     province.dead_count = remoteData.deaths
   })
