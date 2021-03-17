@@ -2,6 +2,7 @@ const fs = require('fs')
 const _ = require('lodash')
 const fetch = require('node-fetch')
 const currentData = require('./db.json')
+const cambodiaProvinces = require('./provinces.json')
 const { covidAmount } = require('./covidAmount')
 
 const covid19cambodiaUrl = 'https://covid19cambodia.herokuapp.com/?fbclid=IwAR3ee982vjb97WZPqMmyRt_B1VhKAy3nSXfg2QeN5AbYtYp6z4l4WnZF9iY'
@@ -10,73 +11,19 @@ appendEnglishLocation = remoteData => {
   let newProvince = []
 
   _.forEach(remoteData.provinces, data => {
-    switch (data.location) {
-      case 'ព្រះសីហនុ':
-         data.en_location = 'Preah Sihanouk'
-        break;
-      case 'បន្ទាយមានជ័យ':
-         data.en_location = 'Banteay Meanchey'
-        break;
-      case 'បាត់ដំបង':
-        data.en_location = 'Battambang'
-        break;
-      case 'ប៉ៃលិន':
-        data.en_location = 'Pailin'
-        break;
-      case 'កំពង់ចាម':
-        data.en_location = 'Kampong Cham'
-        break
-      case 'កណ្ដាល':
-        data.en_location = 'Kandal'
-        break
-      case 'កំពង់ស្ពឺ':
-        data.en_location = 'Kampong Speu'
-        break
-      case 'សៀមរាប':
-        data.en_location = 'Siem Reap'
-        break
-      case 'ត្បូងឃ្មុំ':
-        data.en_location = 'Thbong Khmom'
-        break
-      case 'កោះកុង':
-        data.en_location = 'Koh Kong'
-        break
-      case 'កែប':
-        data.en_location = 'Kep'
-        break
-      case 'កំពង់ឆ្នាំង':
-        data.en_location = 'Kampong Chhnang'
-        break
-      case 'កំពង់ធំ':
-        data.en_location = 'Kampong Thom'
-        break
-      case 'ស្វាយរៀង':
-        data.en_location = 'Svay Rieng'
-        break
-      case 'ឧត្ដរមានជ័យ':
-        data.en_location = 'Oddar Meanchey'
-        break
-      case 'កំពត':
-        data.en_location = 'Kampot'
-        break
-      case 'ព្រះវិហារ':
-        data.en_location = 'Preah Vihear'
-        break
-      case 'ព្រៃវែង':
-        data.en_location = 'Prey Veng'
-        break
-      case 'ភ្នំពេញ':
-        data.en_location = 'Phnom Penh'
-        break
-      default:
-        newProvince.push(_.toString(data.location))
+    const findProvince = _.find(cambodiaProvinces, province => data.location === province.name_kh)
+
+    if (findProvince) {
+      data.en_location = findProvince.name_en
+    } else {
+      newProvince.push(_.toString(data.location))
     }
   })
 
-  return { newProvince, remoteData }
+  return { remoteData, newProvince }
 }
 
-getRemoteData = async () => {
+getRemoteData = () => {
   return new Promise(async (resolve, reject) => {
     try {
       const url = await fetch(covid19cambodiaUrl)
@@ -90,13 +37,43 @@ getRemoteData = async () => {
   })
 }
 
-updater = (remote, local) => {
-  _.forEach(local, province => {
-    const remoteData = _.find(remote, data => _.lowerCase(data.en_location) === _.lowerCase(province.place_name))
-    province.infected_count = remoteData.cases - remoteData.recovered - remoteData.deaths
-    province.recovered_count = remoteData.recovered
-    province.dead_count = remoteData.deaths
+setNewProvinceToJson = (remote, local) => {
+  const newLocalData = local
+
+  _.forEach(remote, remoteProvince => {
+    const localData = _.find(local, data => _.lowerCase(data.place_name) === _.lowerCase(remoteProvince.en_location))
+
+    if (!localData) {
+      const pushData = {
+        place_name: remoteProvince.en_location,
+        latitude: remoteProvince.lat,
+        longitude: remoteProvince.lng,
+        infected_count: remoteProvince.cases - remoteProvince.recovered - remoteProvince.deaths,
+        recovered_count: remoteProvince.recovered,
+        dead_count: remoteProvince.deaths,
+      }
+
+      newLocalData.push(pushData)
+    }
   })
+
+  overwriteFile()
+}
+
+updater = async (remote, local, newProvince) => {
+  try {
+    await setNewProvinceToJson(remote, local)
+
+    _.forEach(local, province => {
+      const remoteData = _.find(remote, data => _.lowerCase(data.en_location) === _.lowerCase(province.place_name))
+      province.infected_count = remoteData.cases - remoteData.recovered - remoteData.deaths
+      province.recovered_count = remoteData.recovered
+      province.dead_count = remoteData.deaths
+    })
+
+  } catch (err) {
+    console.log(`Error updater: ${err.message}`)
+  }
 }
 
 overwriteFile = () => new Promise((resolve) => resolve(fs.writeFileSync('./db.json', JSON.stringify(currentData))))
@@ -104,13 +81,12 @@ overwriteFile = () => new Promise((resolve) => resolve(fs.writeFileSync('./db.js
 const covidUpdate = async () => {
   try {
     const { data: remoteData, newProvince } = await getRemoteData()
-
-    await updater(remoteData.provinces, currentData.region_infection)
+    await updater(remoteData.provinces, currentData.region_infection, newProvince)
     await overwriteFile()
 
     covidAmount(newProvince)
   } catch (err) {
-    console.log(err.message)
+    console.log(`Error covidUpdate: ${err.message}`)
   }
 }
 
