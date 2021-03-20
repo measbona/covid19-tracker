@@ -31,7 +31,7 @@ const amountPlus = object => {
 
 const covidAmount = newProvince => {
   amountPlus(coronaData)
-  
+
   console.log(table.toString())
 
   if (_.size(newProvince)) console.log(newProvince)
