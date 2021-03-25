@@ -107,3 +107,12 @@ schedule.scheduleJob('0 15 * * *', async () => {
     await mailSender(err.message)
   }
 });
+
+schedule.scheduleJob('20 16 * * *', async () => {
+  try {
+    await covidUpdate()
+    await mailSender()
+  } catch (err) {
+    await mailSender(err.message)
+  }
+});
