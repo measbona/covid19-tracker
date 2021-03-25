@@ -1,7 +1,7 @@
 // const schedule = require('node-schedule');
 // const nodemailer = require("nodemailer");
 // const { covidUpdate } = require('./covidUpdate')
-// const { covidAmount } = require('./covidAmount')
+const { covidAmount } = require('./covidAmount')
 // const covidData = require('./db.json')
 // const _ = require('lodash')
 
@@ -89,4 +89,4 @@
 //     await mailSender(err.message)
 //   }
 // });
-console.log('Start')
+console.log(covidAmount())

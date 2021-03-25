@@ -32,11 +32,10 @@ const amountPlus = object => {
 const covidAmount = newProvince => {
   amountPlus(coronaData)
 
-  console.log(`********Update${Date.now()}********`)
+  console.log(`${Date.now()}`)
   console.log(table.toString())
-  console.log(`***********************************`)
 
-  if (_.size(newProvince)) console.log(newProvince)
+  if (_.size(newProvince) > 0) console.log(newProvince)
 }
 
 module.exports = { covidAmount }
